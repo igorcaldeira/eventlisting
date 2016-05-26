@@ -8,9 +8,50 @@ angular.module('app.routes', [])
   // Each state's controller can be found in controllers.js
   $stateProvider
     
+  //
+  // Paginas conectadas pela estrutura principal
+  //
   
+  .state('principal', {
+    url: '/principal',
+    templateUrl: 'templates/principal.html',
+    abstract: true
+  })
 
-      .state('home', {
+  .state('principal.eventos', {
+    url: '/eventos',
+    views: {
+        'tab1':{
+            templateUrl: 'templates/eventos.html',
+            controller: 'eventosCtrl'
+        }
+    }
+  })
+  .state('principal.fimDeSemana', {
+    url: '/fimDeSemana',
+    views: {
+        'tab2':{
+            templateUrl: 'templates/fimDeSemana.html',
+            controller: 'fimDeSemanaCtrl'
+        }
+    }
+  })
+  
+  .state('principal.amigos', {
+    url: '/amigos',
+    views: {
+        'tab3':{
+            templateUrl: 'templates/amigos.html',
+            controller: 'amigosCtrl'
+        }
+    }
+  })
+  
+  //
+  // Paginas
+  //
+  
+  .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',
     controller: 'homeCtrl'
@@ -40,30 +81,12 @@ angular.module('app.routes', [])
     controller: 'loginCtrl'
   })
 
-  .state('eventos', {
-    url: '/eventos',
-    templateUrl: 'templates/eventos.html',
-    controller: 'eventosCtrl'
-  })
-
-  .state('fimDeSemana', {
-    url: '/fimDeSemana',
-    templateUrl: 'templates/fimDeSemana.html',
-    controller: 'fimDeSemanaCtrl'
-  })
-
   .state('bilhetes', {
     url: '/bilhetes',
     templateUrl: 'templates/bilhetes.html',
     controller: 'bilhetesCtrl'
   })
 
-  .state('amigos', {
-    url: '/amigos',
-    templateUrl: 'templates/amigos.html',
-    controller: 'amigosCtrl'
-  })
-
-$urlRouterProvider.otherwise('/home')
+  $urlRouterProvider.otherwise('home')
 
 });

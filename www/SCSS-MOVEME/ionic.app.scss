@@ -4,9 +4,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0px;
-	-webkit-box-shadow: 4px 5px 6px #b8b6b8;
-	-moz-box-shadow: 4px 5px 6px #b8b6b8;
-	box-shadow: 4px 5px 6px #37474F;
 	font-family: Arial;
 	color: #ffffff;
 	font-size: 20px;
@@ -29,7 +26,6 @@ time.icon {
 	height: 6em;
 	background-color: #fff;
 	border-radius: 0.6em;
-	box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
 	overflow: hidden;
 }
 
@@ -48,7 +44,6 @@ time.icon strong {
 	padding: 0.2em 0;
 	color: #fff;
 	background-color: #ec5355;
-	box-shadow: 0 2px 0 #ec5355;
 }
 
 time.icon em {
@@ -63,3 +58,4 @@ time.icon span {
 	padding-top: 0.8em;
 	color: #5d5454;
 }
+
