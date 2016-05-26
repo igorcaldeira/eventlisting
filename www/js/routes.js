@@ -1,0 +1,69 @@
+angular.module('app.routes', [])
+
+.config(function($stateProvider, $urlRouterProvider) {
+
+  // Ionic uses AngularUI Router which uses the concept of states
+  // Learn more here: https://github.com/angular-ui/ui-router
+  // Set up the various states which the app can be in.
+  // Each state's controller can be found in controllers.js
+  $stateProvider
+    
+  
+
+      .state('home', {
+    url: '/home',
+    templateUrl: 'templates/home.html',
+    controller: 'homeCtrl'
+  })
+
+  .state('home2', {
+    url: '/home2',
+    templateUrl: 'templates/home2.html',
+    controller: 'home2Ctrl'
+  })
+
+  .state('home3', {
+    url: '/home3',
+    templateUrl: 'templates/home3.html',
+    controller: 'home3Ctrl'
+  })
+
+  .state('cadastro', {
+    url: '/cadastro',
+    templateUrl: 'templates/cadastro.html',
+    controller: 'cadastroCtrl'
+  })
+
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
+  })
+
+  .state('eventos', {
+    url: '/eventos',
+    templateUrl: 'templates/eventos.html',
+    controller: 'eventosCtrl'
+  })
+
+  .state('fimDeSemana', {
+    url: '/fimDeSemana',
+    templateUrl: 'templates/fimDeSemana.html',
+    controller: 'fimDeSemanaCtrl'
+  })
+
+  .state('bilhetes', {
+    url: '/bilhetes',
+    templateUrl: 'templates/bilhetes.html',
+    controller: 'bilhetesCtrl'
+  })
+
+  .state('amigos', {
+    url: '/amigos',
+    templateUrl: 'templates/amigos.html',
+    controller: 'amigosCtrl'
+  })
+
+$urlRouterProvider.otherwise('/home')
+
+});

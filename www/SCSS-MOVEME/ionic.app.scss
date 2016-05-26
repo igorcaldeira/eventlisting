@@ -1,0 +1,65 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.button {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	-webkit-box-shadow: 4px 5px 6px #b8b6b8;
+	-moz-box-shadow: 4px 5px 6px #b8b6b8;
+	box-shadow: 4px 5px 6px #37474F;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	background: #4f77bb;
+	padding: 8px 22px 8px 22px;
+	text-decoration: none;
+}
+
+.buton: hover {
+	background: #090991;
+	text-decoration: none;
+}
+
+time.icon {
+	font-size: 1em;
+	/* change icon size */
+	  display: block;
+	position: relative;
+	width: 5em;
+	height: 6em;
+	background-color: #fff;
+	border-radius: 0.6em;
+	box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+	overflow: hidden;
+}
+
+time.icon * {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+}
+
+time.icon strong {
+	position: absolute;
+	top: 0;
+	padding: 0.2em 0;
+	color: #fff;
+	background-color: #ec5355;
+	box-shadow: 0 2px 0 #ec5355;
+}
+
+time.icon em {
+	position: absolute;
+	bottom: 0.3em;
+	color: #ec5355;
+}
+
+time.icon span {
+	font-size: 2.8em;
+	letter-spacing: -0.05em;
+	padding-top: 0.8em;
+	color: #5d5454;
+}
