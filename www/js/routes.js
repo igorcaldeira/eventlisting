@@ -87,6 +87,12 @@ angular.module('app.routes', [])
     controller: 'bilhetesCtrl'
   })
 
+  .state('evento', {
+    url: '/evento',
+    templateUrl: 'templates/eventoIndividual.html',
+    controller: 'eventoCtrl'
+  })
+
   $urlRouterProvider.otherwise('home')
 
 });

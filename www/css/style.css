@@ -3,3 +3,52 @@
     width: 80%;
     max-width: 500px;
 }
+
+.button-event-back{
+    position: absolute;
+    top: 5px;
+}
+
+.basic-padding
+{
+    padding:  5px;   
+}
+
+.event-info
+{
+    padding: 5px;
+    background-color: #ffffff;   
+}
+
+.event-description
+{
+    padding: 10px;
+    background-color: #e6e6e6;   
+}
+
+.event-productor
+{
+    padding: 10px;
+}
+
+.event-div
+{
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.event-list-title
+{
+    background-color: rgba(0, 0, 0, 0.8); /* Standard syntax */
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+.event-list-calendar
+{
+    margin-top: 30px;
+    margin-right: 20px;
+}

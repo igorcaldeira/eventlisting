@@ -35,4 +35,8 @@ angular.module('app.controllers', [])
 .controller('amigosCtrl', function($scope) {
 
 })
+
+.controller('eventoCtrl', function($scope) {
+
+})
  
