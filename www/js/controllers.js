@@ -2,6 +2,7 @@ angular.module('app.controllers', [])
   
 .controller('homeCtrl', function($scope) {
 
+    
 })
    
 .controller('home2Ctrl', function($scope) {

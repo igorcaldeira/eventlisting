@@ -52,3 +52,16 @@
     margin-top: 30px;
     margin-right: 20px;
 }
+
+.slide-tutorial
+{
+}
+
+.slide-tutorial-page
+{
+    background-image: url(../img/teste.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 15px;
+}
