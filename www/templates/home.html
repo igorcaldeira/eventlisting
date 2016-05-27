@@ -1,21 +1,37 @@
-<ion-view title="Home" id="page1" hide-nav-bar="true" style="background-color: gray" >
-    <ion-content padding="false" has-header="false" >
+<ion-view title="Home" id="page1" hide-nav-bar="true" style="background-color: gray">
+    <ion-content padding="false" has-header="false">
 
-       <ion-slide-box class="slide-tutorial" on-slide-changed="slideHasChanged($index)" auto-play="true">
-          <ion-slide>
-            <div class="box slide-tutorial-page"><br><h1>Eventos</h1><h2>Encontre os melhores eventos</h2></div>
-          </ion-slide>
-          <ion-slide>
-            <div class="box slide-tutorial-page"><br><h1>Bilhetes</h1><h2>Compre bilhetes agora</h2></div>
-          </ion-slide>
-          <ion-slide>
-            <div class="box slide-tutorial-page"><br><h1>Localize</h1><h2>Eventos em todos os lugares</h2></div>
-          </ion-slide>
-           
+        
+        <ion-slide-box class="slide-tutorial" on-slide-changed="slideHasChanged($index)" auto-play="true">
+            <ion-slide>
+                <div class="box slide-tutorial-page" style=" background-image: url(../img/introducao/Compre_Tickets.png)">
+                    
+                    <h1>Eventos</h1>
+                    <h2>Encontre os melhores eventos</h2>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box slide-tutorial-page" style=" background-image: url(../img/introducao/Encontre_Melhores_Eventos.png)">
+                    <br>
+                    <h1>Bilhetes</h1>
+                    <h2>Compre bilhetes agora</h2>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box slide-tutorial-page" style=" background-image: url(../img/introducao/Todos_Lugares.png)">
+                    <br>
+                    <h1>Localize</h1>
+                    <h2>Eventos em todos os lugares</h2>
+                </div>
+            </ion-slide>
         </ion-slide-box>
-            <button id="home-button10" ui-sref="cadastro" style="position: fixed; bottom: 80px;" 
-                    class="button button-calm button-small button-block">Cadastre-se</button>
-            <button id="home-button10" ui-sref="login" style="position: fixed; bottom: 30px" 
-                    class="button button-calm button-small button-block">Entrar</button>
+        
+        <button id="home-button10" ui-sref="cadastro" style="position: fixed; bottom: 80px;" 
+                class="button button-calm button-small button-block">Cadastre-se</button>
+        <button id="home-button10" ui-sref="login" style="position: fixed; bottom: 30px" 
+                class="button button-calm button-small button-block">Entrar</button>
+        
+        <img src="../img/logo.png" width="150px;" style="position: fixed; top: 0px; padding: 20px"/>
+        
     </ion-content>
 </ion-view>

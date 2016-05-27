@@ -59,9 +59,9 @@
 
 .slide-tutorial-page
 {
-    background-image: url(../img/teste.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     padding: 15px;
 }
