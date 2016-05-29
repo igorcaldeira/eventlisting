@@ -1,7 +1,14 @@
 angular.module('app.controllers', [])
   
-.controller('homeCtrl', function($scope) {
 
+.controller('linguagemCtrl', function($scope, $translate) {
+
+    $scope.changeLanguage = function (key) {
+        $translate.use(key);
+    };
+})
+
+.controller('homeCtrl', function($scope) {
     
 })
    
@@ -41,3 +48,18 @@ angular.module('app.controllers', [])
 
 })
  
+//
+// Controllers do pagamento
+//
+
+.controller('pagamento1formularioCtrl', function($scope) {
+
+})
+
+.controller('pagamento2verifiqueCtrl', function($scope) {
+
+})
+
+.controller('pagamento3finalizadoCtrl', function($scope) {
+
+})

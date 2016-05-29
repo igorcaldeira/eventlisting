@@ -1,5 +1,7 @@
 <ion-view title="Evento Individual" id="pageEventoIndividual" class=" " hide-nav-bar="true">
-    <ion-content padding="false" scroll="true"  >
+    <ion-content padding="false" scroll="true" 
+                 ng-init="ingressos=[{nome:'Promocional dia 04/06 (Anelis)', qtd : 10, valor : 30.00, dataFinal : '31/05/2016'},
+                          {nome:'Promocional dia 03/06 (Scambo)', qtd : 0, valor : 40.00, dataFinal : '31/05/2016'}]" >
         
         <a class="button button-clear button-positive button-event-back" ui-sref="principal.eventos">
            <i class="icon ion-chevron-left"></i>
@@ -8,51 +10,40 @@
         <img src="img/eventos/evento4.png" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
         
         <div class="event-info">
-
             <h2>DEVANEIOS SONOROS</h2>
-            <h4><i class="icon ion-compass"></i>&nbsp;Bar Ice Drink - Vitória da Conquista, BA</h4>
+            <h4><i class="icon ion-location"></i>&nbsp;Bar Ice Drink - Vitória da Conquista, BA</h4>
             <h4><i class="icon ion-android-calendar"></i>&nbsp;03 de junho de 2016, 20h - 05 de junho de 2016, 02h</h4>
         </div>
         
-        <hr>
-        <div class="list">
-
+            <button class="button button-full button-small button-dark" style="font-weight: 500; font-size: 15px">
+                Ingressos
+            </button>
+        
+        <div class="list" ng-repeat="x in ingressos">
               <div class="row">
-                <div class="col col-75">
-                    Promocional dia 04/06 (Anelis)<br>
-                    R$ 30,00<br>
-                    <span style="color: #999999"><i>Vendas até 31/05/2016</i></span>
+                <div class="col col-60">
+                    {{x.nome}}
+                    <br>
+                    R$ {{x.valor}}<br>
+                    <span style="color: #999999"><i>Vendas até {{x.dataFinal}}</i></span>
                 </div>
                 <div class="col">
-                    <button class="button button-small button-dark">
+                    <button class="button button-small button-dark" onclick="">
                         -
+                    </button>
+                    <button class="button button-small button-light">
+                        {{x.qtd}}
                     </button>
                     <button class="button button-small button-dark">
                         +
                     </button>
                 </div>
-        </div>
-
-              <div class="row">
-                <div class="col col-75">
-                    Promocional dia 03/06 (Scambo)<br>
-                    R$ 40,00<br>
-                    <span style="color: #999999"><i>Vendas até 31/05/2016</i></span>
-                </div>
-                <div class="col">
-                    <button class="button button-small button-dark">
-                        -
-                    </button>
-                    <button class="button button-small button-dark">
-                        +
-                    </button>
-                </div>
+            </div>
         </div>
             
-            <button class="button button-full button-small button-energized" style="background-color: #FF9B27; font-weight: 500; font-size: 15px">
+            <button ui-sref="pagamento.formulario"  class="button button-full button-small button-energized" style="background-color: #FF9B27; font-weight: 500; font-size: 15px">
                 COMPRAR INGRESSOS
             </button>
-        </div>
         
         
             <div class="event-description">
@@ -74,18 +65,27 @@ Anelis Assumpção: Filha do ícone da Vanguarda Paulista, Itamar Assumpção, a
             <div class="event-productor">
                 <h3>Sobre o produtor</h3>
                 <br>
-                Casa Fora do Eixo Vitória da Conquista
-
-Coletivo integrante do Circuito Fora do Eixo. Desenvolve ações culturais e já trouxe para Vitória da Conquista nomes como Pouca Vogal, Marcelo Jeneci, Emicida, Ratos de Porão, dentre outros.
+                <div class="row">
+                    <div class="col" style="text-align: center">
+                        <img src="img/eventos/evento3.jpg" width="100px" height="100px" style="border-radius: 999px;"/>
+                    </div>
+                    <div class="col col-75">
+                        <h4>Casa Fora do Eixo Vitória da Conquista</h4>
+                        Coletivo integrante do Circuito Fora do Eixo. Desenvolve ações culturais e já trouxe para Vitória da Conquista nomes como Pouca Vogal, Marcelo Jeneci, Emicida, Ratos de Porão, dentre outros.
+                    </div>
+                </div>
         </div>
-        <button class="button button-small button-outline button-stable">
-          Fale com o produtor
-        </button>
-        <button class="button button-small button-outline button-stable">
-          Mais eventos deste produtor
-        </button>
-        <br><br><br>
-        <div>
+        <br>
+        <center>
+            <button class="button button-small button-outline button-stable">
+              Fale com o produtor
+            </button>
+            <button class="button button-small button-outline button-stable">
+              Mais eventos deste produtor
+            </button>
+        </center>
+        <br>
+        <div class="event-description">
             <center>Sympla <a href="#">Central de ajuda</a></center>
         </div>
         

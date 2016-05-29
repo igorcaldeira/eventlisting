@@ -7,9 +7,62 @@
 // 'starter.controllers' is found in controllers.js
 var db;
 
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives'])
+var app = angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives', 'pascalprecht.translate']);
 
-.run(function($ionicPlatform) {
+app.config(['$translateProvider', function ($translateProvider) {
+  
+  $translateProvider.translations('pt-BR', {
+      
+    //Introducao
+    'CADASTRESE':'Cadastre-se',
+    'ENTRAR':'Entrar',
+    
+    //Pagina principal
+    'EVENTOS': 'Eventos',
+      
+    //Evento individual
+    'INGRESSOS': 'Ingressos',
+    'COMPRARINGRESSOS': 'COMPRAR INGRESSOS',
+    'VENDASATE':'Vendas até ',
+    'DESCRICAODOEVENTO':'Descrição do evento'
+  });
+    
+    $translateProvider.translations('en-US', {
+      
+    //Introducao
+    'CADASTRESE':'Sign-Up',
+    'ENTRAR':'Sign-In',
+    
+    //Pagina principal
+    'EVENTOS': 'Events',
+        
+    //Evento individual
+    'INGRESSOS': 'Ingressos',
+    'COMPRARINGRESSOS': 'BUY TICKETS',
+    'VENDASATE':'Sales up',
+    'DESCRICAODOEVENTO':'Event description'
+  });
+ 
+  $translateProvider.translations('es-ES', {
+      
+    //Introducao
+    'CADASTRESE':'Registrar',
+    'ENTRAR':'Entrar',
+    
+    //Pagina principal
+    'EVENTOS': 'Eventos',
+      
+    //Evento individual
+    'INGRESSOS': 'Ingressos',
+    'COMPRARINGRESSOS': 'COMPRAR ENTRADAS',
+    'VENDASATE':'Ventas hasta ',
+    'DESCRICAODOEVENTO':'Descripción del evento'
+  });
+ 
+  $translateProvider.preferredLanguage('pt-BR');
+}]);
+
+app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)

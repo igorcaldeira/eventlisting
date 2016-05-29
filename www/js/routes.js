@@ -48,25 +48,59 @@ angular.module('app.routes', [])
   })
   
   //
+  // Paginas de Compra
+  //
+  
+  .state('pagamento', {
+    url: '/pagamento',
+    templateUrl: 'templates/compra-ingressos/pagamento.html',
+    abstract: true
+  })
+  
+  .state('pagamento.formulario', {
+    url: '/formulario',
+    views: {
+        'conteudo':{
+            templateUrl: 'templates/compra-ingressos/pagamento1formulario.html',
+            controller: 'pagamento1formularioCtrl'
+        }
+    }
+  })
+  
+  .state('pagamento.verifique', {
+    url: '/verifique',
+    views: {
+        'conteudo':{
+            templateUrl: 'templates/compra-ingressos/pagamento2verifique.html',
+            controller: 'pagamento2verifiqueCtrl'
+        }
+    }
+  })
+  
+  .state('pagamento.finalizado', {
+    url: '/finalizado',
+    views: {
+        'conteudo':{
+            templateUrl: 'templates/compra-ingressos/pagamento3finalizado.html',
+            controller: 'pagamento3finalizadoCtrl'
+        }
+    }
+  })
+  
+  //
   // Paginas
   //
+  
+  .state('linguagem', {
+    url: '/linguagem',
+    templateUrl: 'templates/linguagem.html',
+    controller: 'linguagemCtrl'
+  })
   
   .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',
     controller: 'homeCtrl'
-  })
-
-  .state('home2', {
-    url: '/home2',
-    templateUrl: 'templates/home2.html',
-    controller: 'home2Ctrl'
-  })
-
-  .state('home3', {
-    url: '/home3',
-    templateUrl: 'templates/home3.html',
-    controller: 'home3Ctrl'
   })
 
   .state('cadastro', {
@@ -93,6 +127,6 @@ angular.module('app.routes', [])
     controller: 'eventoCtrl'
   })
 
-  $urlRouterProvider.otherwise('home')
+  $urlRouterProvider.otherwise('linguagem')
 
 });
