@@ -16,9 +16,9 @@ app.config(['$translateProvider', function ($translateProvider) {
     //Introducao
     'CADASTRESE':'Cadastre-se',
     'ENTRAR':'Entrar',
-    
-    //Pagina principal
-    'EVENTOS': 'Eventos',
+    'EVENTOS': ' EVENTOS',
+    'TICKETS': ' TICKETS',
+    'LOCALIZE': ' LOCALIZE',
       
     //Evento individual
     'INGRESSOS': 'Ingressos',
@@ -32,9 +32,9 @@ app.config(['$translateProvider', function ($translateProvider) {
     //Introducao
     'CADASTRESE':'Sign-Up',
     'ENTRAR':'Sign-In',
-    
-    //Pagina principal
-    'EVENTOS': 'Events',
+    'EVENTOS': ' EVENTOS',
+    'TICKETS': ' INGRESSOS',
+    'LOCALIZE': ' LOCALIZE',
         
     //Evento individual
     'INGRESSOS': 'Ingressos',
@@ -48,9 +48,9 @@ app.config(['$translateProvider', function ($translateProvider) {
     //Introducao
     'CADASTRESE':'Registrar',
     'ENTRAR':'Entrar',
-    
-    //Pagina principal
-    'EVENTOS': 'Eventos',
+    'EVENTOS': ' EVENTOS',
+    'TICKETS': ' INGRESSOS',
+    'LOCALIZE': ' LOCALIZE',
       
     //Evento individual
     'INGRESSOS': 'Ingressos',

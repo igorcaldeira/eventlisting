@@ -74,12 +74,23 @@
 
 .titulo-home
 {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.6);
     display: inline-block;
+    font-weight: 900;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 3px;
+    padding: 5px;
+    padding-left: 15px;
 }
 
 .description-home
 {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.6);
     display: inline-block; 
+    color: white;
+    padding: 5px;
+    padding-left: 15px;
+    
+    margin-top: -10px;
 }
