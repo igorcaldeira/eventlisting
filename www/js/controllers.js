@@ -7,6 +7,52 @@ angular.module('app.controllers', [])
         $translate.use(key);
     };
 })
+   
+.controller('cadastroCtrl', function($scope) {
+    
+    $scope.nome = "";
+    $scope.sobrenome = "";
+    $scope.email = "";
+    $scope.senha = "";
+
+    $scope.insert = function() {
+        //alert("Scope name: " + this.name);
+        var query = "INSERT INTO usuario (nome, sobrenome, email, senha) VALUES (?, ?, ?, ?)";
+        db.executeSql(query, [this.nome, this.sobrenome, this.email, this.senha], function (resultSet) {
+          //alert('Id: ' + resultSet.insertId);
+          //alert("Name: " + resultSet.rows.item(0).name);
+        }, function(error) {
+          alert('SELECT error: ' + error.message);
+        });
+
+        this.nome = "";
+        this.sobrenome = "";
+        this.sobrenome = "";
+        this.email = "";
+        this.senha = "";
+
+      }
+    
+})
+   
+.controller('loginCtrl', function($scope, $stateParams) {
+    
+    $scope.login = function() {
+        
+         db.executeSql('SELECT * FROM usuario WHERE email = ?', [$stateParams.email], function(res){
+
+             alert(res.rows.length);
+
+            if (res.rows.length <= 0) {
+                //falha no login
+                alert('falha no login');
+            }
+
+          });
+        
+    }
+    
+})
 
 .controller('homeCtrl', function($scope) {
     
@@ -17,14 +63,6 @@ angular.module('app.controllers', [])
 })
    
 .controller('home3Ctrl', function($scope) {
-
-})
-   
-.controller('cadastroCtrl', function($scope) {
-
-})
-   
-.controller('loginCtrl', function($scope) {
 
 })
    

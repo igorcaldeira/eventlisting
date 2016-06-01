@@ -77,7 +77,7 @@ app.run(function($ionicPlatform) {
       
     // create and instantiate new Database
     db = window.sqlitePlugin.openDatabase({ name: 'my.db', location: 'default'});
-    db.executeSql("CREATE TABLE IF NOT EXISTS contatos (id INTEGER PRIMARY KEY, name TEXT, email TEXT, phone TEXT)");
+    db.executeSql("CREATE TABLE IF NOT EXISTS usuario (id INTEGER PRIMARY KEY, nome TEXT, sobrenome TEXT, email TEXT, senha TEXT)");
 
   });
 })
