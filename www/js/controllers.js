@@ -35,23 +35,23 @@ angular.module('app.controllers', [])
     
 })
    
-.controller('loginCtrl', function ($scope) {
-    $scope.form = {};
+.controller('loginCtrl', function($scope, $stateParams) {
+    
+    $scope.login = function() {
+        
+         db.executeSql('SELECT * FROM usuario WHERE email = ?', [$stateParams.email], function(res){
 
-    $scope.login = function () {
-        db.executeSql('SELECT * FROM usuario WHERE email = ? AND senha = ?', [$scope.form.email, $scope.form.senha], function (res) {
+             alert(res.rows.length);
 
             if (res.rows.length <= 0) {
                 //falha no login
-                alert('Login ou senha incorretos!');
-            }
-            else
-            {
-                $scope.state.go('/evento');
+                alert('falha no login');
             }
 
-        });
+          });
+        
     }
+    
 })
 
 .controller('homeCtrl', function($scope) {

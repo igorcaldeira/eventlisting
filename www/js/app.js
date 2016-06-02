@@ -72,7 +72,7 @@ app.run(function($ionicPlatform) {
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.style(1);
+      StatusBar.styleDefault();
     }
       
     // create and instantiate new Database
