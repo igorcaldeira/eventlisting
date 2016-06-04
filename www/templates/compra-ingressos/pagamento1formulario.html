@@ -1,10 +1,42 @@
 <ion-view title="Cadastro" id="page4" class=" ">
     <ion-content padding="true" class="has-header">
+		<img src="img/eventos/evento4.png" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        <div class="event-info">
+            <h4>DEVANEIOS SONOROS</h4>
+            <h6><i class="icon ion-location"></i>&nbsp;Bar Ice Drink - Vitória da Conquista, BA</h6>
+            <h6><i class="icon ion-android-calendar"></i>&nbsp;03 de junho de 2016, 20h - 05 de junho de 2016, 02h</h6>
+        </div>
+
+		<button class="button button-full button-small button-dark" style="font-weight: 500; font-size: 15px">
+			Ingressos
+		</button>
+		<div class="list">
+			<div class="row">
+				<div class="col col-60">
+				 	Promocional
+					<br>
+					R$ 30,00<br>
+				</div>
+				<div class="col col-60">
+					<div class="col col-60">
+					 	Quantidade
+						<br>
+						1<br>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<img src="img/compra/form1.png" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+
         <form id="cadastro-form2" class="list ">
+
+			<h4>Informações do participante</h4>
             <ion-list id="cadastro-list2" class=" ">
+				<h5>Ingresso nº 1</h5>
                 <label class="item item-input " id="cadastro-input3">
                     <span class="input-label">Nome</span>
-                    <input type="text" placeholder="Nome">
+                    <input type="text"  placeholder="Nome">
                 </label>
                 <label class="item item-input " id="cadastro-input3">
                     <span class="input-label">Sobrenome</span>
@@ -14,12 +46,139 @@
                     <span class="input-label">E-mail</span>
                     <input type="text" placeholder="E-mail">
                 </label>
-                <label class="item item-input " id="cadastro-input5">
-                    <span class="input-label">Senha</span>
-                    <input type="text" placeholder="Senha">
+				<label class="item item-input " id="cadastro-input4">
+                    <span class="input-label">E-mail</span>
+                    <input type="text" placeholder="E-mail">
                 </label>
-                <ion-checkbox ng-model="filter.blue">Concordo com os Termos de uso e Política de privacidade da Sympla</ion-checkbox>
-            </ion-list>            </ion-list>
+            </ion-list>
+			<br>
+			<h4>Informação para o recebimento</h4>
+			<label class="item item-input item-select">
+			  <div class="input-label">
+				Copiar informações
+			  </div>
+			  <select>
+				<option value="1" selected="selected">Selecione(Opcional)</option>
+				<option value="0" disabled="disabled">Ingresso 1</option>
+			  </select>
+			</label>
+			<label class="item item-input " id="cadastro-input3">
+				<span class="input-label">Nome</span>
+				<input type="text" placeholder="Nome">
+			</label>
+			<label class="item item-input " id="cadastro-input3">
+				<span class="input-label">Sobrenome</span>
+				<input type="text" placeholder="Sobrenome">
+			</label>
+			<label class="item item-input " id="cadastro-input4">
+				<span class="input-label">E-mail</span>
+				<input type="text" placeholder="E-mail">
+			</label>
+			<label class="item item-input " id="cadastro-input4">
+				<span class="input-label">Confirmação</span>
+				<input type="text" placeholder="Confirmação de e-mail">
+			</label>
+			<br>
+			<h4>Informação para pagamento</h4>
+			<label class="item item-input item-select">
+			  <div class="input-label">
+				Parcelamento
+			  </div>
+			  <select>
+				<option value="1" selected="selected">À vista</option>
+				<option value="0" disabled="disabled">Parcelado (1,99% juros a.m.)</option>
+				<option value="2">&nbsp;&nbsp;&nbsp;2x R$ 25,47</option>
+				<option value="3">&nbsp;&nbsp;&nbsp;3x R$ 17,14</option>
+				<option value="4">&nbsp;&nbsp;&nbsp;4x R$ 12,96</option>
+				<option value="5">&nbsp;&nbsp;&nbsp;5x R$ 10,46</option>
+				<option value="6">&nbsp;&nbsp;&nbsp;6x R$ 8,80</option>
+				<option value="7">&nbsp;&nbsp;&nbsp;7x R$ 7,60</option>
+				<option value="8">&nbsp;&nbsp;&nbsp;8x R$ 6,71</option>
+				<option value="9">&nbsp;&nbsp;&nbsp;9x R$ 6,01</option>
+				<option value="10">&nbsp;&nbsp;&nbsp;10x R$ 5,45</option>
+			  </select>
+			</label>
+			<label class="item item-input item-select">
+			  <div class="input-label">
+				Cartão de crédito
+			  </div>
+			  <select>
+				  <option value="">Escolha o cartão</option>
+				  <option value="Visa">Visa</option>
+				  <option value="Mastercard">Mastercard</option>
+				  <option value="AmericanExpress">American Express</option>
+				  <option value="Diners">Diners</option>
+				  <option value="Hipercard">Hipercard</option>
+			  </select>
+			</label>
+			<label class="item item-input " id="cadastro-input3">
+				<span class="input-label">Número do cartão</span>
+				<input type="text" placeholder="Número do cartão">
+			</label>
+			<label class="item item-input item-select">
+			<div class="col col-50">
+					Data de expiração<br>
+			</div>
+			  <select>
+				  <option value="">Mês</option>
+				  <option value="1">01</option>
+				  <option value="2">02</option>
+				  <option value="3">03</option>
+				  <option value="4">04</option>
+				  <option value="5">05</option>
+				  <option value="6">06</option>
+				  <option value="7">07</option>
+				  <option value="8">08</option>
+				  <option value="9">09</option>
+				  <option value="10">10</option>
+				  <option value="11">11</option>
+				  <option value="12">12</option>
+			  </select>
+		  </label>
+		  <label class="item item-input item-select">
+			  <div class="col col-50">
+					  Data de expiração<br>
+			  </div>
+			  <select>
+					<option value="">Ano</option>
+					<option value="16">2016</option>
+					<option value="17">2017</option>
+					<option value="18">2018</option>
+					<option value="19">2019</option>
+					<option value="20">2020</option>
+					<option value="21">2021</option>
+					<option value="22">2022</option>
+					<option value="23">2023</option>
+					<option value="24">2024</option>
+					<option value="25">2025</option>
+					<option value="26">2026</option>
+			  </select>
+			</label>
+			<br>
+			<h4>Dados do Titular do Cartão</h4>
+			<ion-list id="cadastro-list2" class=" ">
+				<label class="item item-input " id="cadastro-input3">
+					<span class="input-label">Nome</span>
+					<input type="text" placeholder="Nome">
+				</label>
+				<label class="item item-input " id="cadastro-input3">
+					<span class="input-label">Nascimento</span>
+					<input type="text" placeholder="__/__/___">
+				</label>
+				<label class="item item-input " id="cadastro-input4">
+					<span class="input-label">CPF</span>
+					<input type="text" placeholder="XXX.XXX.XXX-XX">
+				</label>
+				<label class="item item-input " id="cadastro-input4">
+					<span class="input-label">Telefone</span>
+					<input type="text" placeholder="(XX) XXXXX-XXXX">
+				</label>
+				<label class="item item-input " id="cadastro-input4">
+					<span class="input-label">CEP</span>
+					<input type="text" placeholder="XXXXX-XXX">
+				</label>
+			</ion-list>
+			<br>
 
             <div class="spacer" style="width: 283px; height: 39px;"></div>
             <button id="cadastro-button4" ui-sref="pagamento.verifique" style="color:#FDFCFC;border-radius:5px 5px 5px 5px;" class=" button button-calm button-small button-block ">Cadastre-se</button>
